@@ -5,6 +5,7 @@
  */
 
 const path = require("path")
+const { graphql } = require("gatsby")
 
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
