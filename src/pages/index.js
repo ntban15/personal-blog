@@ -1,20 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import PostItem from "../components/post-item"
 
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
     <Layout>
-      {posts.map(({ node: post }) => (
-        <div>
-          <Link key={post.id} to={post.frontmatter.path}>
-            {post.frontmatter.title}-{post.frontmatter.date}
-          </Link>
-          <p>{post.excerpt}</p>
-        </div>
+      {posts.map(({ node: { id, excerpt, frontmatter: { title, date, path } } }) => (
+        <PostItem key={id} title={title} created={date} path={path} excerpt={excerpt} />
       ))}
     </Layout>
   )

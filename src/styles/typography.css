@@ -5,13 +5,20 @@ h4,
 h5,
 h6 {
   font-family: "Nunito";
-  font-weight: bold;
+  font-weight: 700;
   color: #2f2f2f;
 }
 
 p {
   font-family: "Open Sans";
   color: #2f2f2f;
+  font-weight: 200;
+}   
+
+span {
+  font-family: "Open Sans";
+  color: #2f2f2f;
+  font-weight: 200;
 }
 
 a {
