@@ -1,0 +1,29 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito";
+  font-weight: bold;
+  color: #2f2f2f;
+}
+
+p {
+  font-family: "Open Sans";
+  color: #2f2f2f;
+}
+
+a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+a:link {
+  color: #2f2f2f;
+}
+
+a:hover,
+a:visited:hover {
+  color: #005f86;
+}

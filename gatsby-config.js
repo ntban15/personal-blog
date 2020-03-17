@@ -46,10 +46,10 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Abril Fatface`,
+            family: `Nunito`,
           },
           {
-            family: `Lato`,
+            family: `Open Sans`,
           },
         ],
       },
