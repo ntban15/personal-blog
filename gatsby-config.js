@@ -35,20 +35,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-typography`,
       options: {
-        fonts: [
-          {
-            family: `Nunito`,
-          },
-          {
-            family: `Open Sans`,
-          },
-        ],
+        pathToConfigModule: `src/utils/typography`,
+        omitGoogleFont: true,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
